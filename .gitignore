@@ -10,4 +10,5 @@
 # Ignore all local history of files
 .history
 .ionide
-__pycache__/*
+.gitignore
+__pychache__/*
