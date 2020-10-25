@@ -10,6 +10,8 @@ name = " "
 start_sim = " "
 enter = " "
 retry_input = " "
+wake_up = " "
+escape = " "
 bye = 0
 
 # Function to exit the game
@@ -35,7 +37,7 @@ def intro():
     time.sleep(1)
     print("The country is in constant war with the civilians.")
     time.sleep(1)
-    print("The war is getting so out of hand that the civilians are starting to attack you for your believe.")
+    print("The war is getting so out of hand that the civilians are starting to attack you for being befriend with the leader of the resistance.")
     time.sleep(1)
     print("You don't see a other way out anymore than to escape from the country.")
     time.sleep(1)
@@ -53,6 +55,7 @@ def help():
     print(" ")
     console.check_answer("Plz press enter to continue.")
 
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Start part 0
 # Start adventure
 def adventure():
@@ -164,11 +167,90 @@ def retry():
         console.check_answer("Plz press enter to continue.")
         play_again()
 
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # End part 0
 # Start part 1
 def Sim_start():
-    print("")
+    print("You hear a dull beep noise.")
+    print("It sounds like your alarm is going of.")
+    print("So what will you do?")
+    print("1. Wake up.")
+    print("2. Go back to sleep.")
+    print("3. Throw your alarm out of the window.")
+    wake_up = console.check_answer("while you go back to sleep or wake up: ", ["1", "wake up", "2" , "sleep", "3", "throw"]).lower()
+    if wake_up == "1" or wake_up == "wake up":
+        print("You wake up and turn of your alarm.")
+        print("You look at the time and you see that its 10.00 am.")
+        print("You get up out of bed and get yourself ready.")
+        print("Outside you hear the occasional screaming of people and gunshots being fired in the far distance.")
+        print("You are kind of getting sick of this.")
+        print("You go down stairs to get some breakfast.")
+        print("When you got down stairs you see some shady people sitting in your living room.")
+        shady_people()
+    elif wake_up == "2" or wake_up == "sleep":
+        print("zzzzzz")
+        print("zzzzzzzzzzzzzzz......")
+        print("You hear suddenly a loud scream.")
+        print("???: He you lazy peace of shit wake the fuck up!!!!")
+        print("That immediately wakes you up.")
+        print("You look around and then you see your best friend standing by your bed trying to wake up.")
+        print("Her name is Monika and she is the leader of the local resistance group.")
+        print("Monika: Ah you finnally awake.")
+        print("Monika: That took you long enough.")
+        print("You ask what is going on and why she woke you up.")
+        print("Monika: There is no time to explain.")
+        print("Monika: We need to get out of here right the fuck now.")
+        print("You do what Monika tells you.")
+        print("You quickly put on some clothes and leave your house through the back door.")
+        quick_escape()
+    elif wake_up == "3" or wake_up == "throw":
+        print("You grab your alarm and throw it out of the window.")
+        print("The alarm hits the head of a unexpect civilian.")
+        print("People though it was a bomb you throw out so they throw a grenade back to you.")
+        print("*booooooooommmmmm*")
+        print("You got hit by the explosion and died instantly.")
+        print(67 * "-")
+        print(" ")
+        print("GAME OVER")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 3")
+        print("Unexpected event")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    
+def shady_people():
+    print("You look again and see its your best friend Monika and some friends of her.")
+    print("Monika is the leader of the resitance in your neighborhood.")
+    print("You start asking what they are doing here.")
+    print("Monika: We are here to warn you that there are some people after you.")
+    print("Monika: And its is the best that you get out of here.")
+    print("Monika: The country is not safe anymore for you.")
+    print("Monika: The found out that you're befriend with me.")
+    print("You ask her what you need to do and if your family is safe.")
+    print("Monika: We have prepared for you a escape route you can take to get out of here.")
+    print("Monika: And don't worry about your family they are safe.")
+    print("Monika: I know some people that can help you leave the country.")
+    print("Monika's phone goes of.")
+    print("Monika picks up the phone and start talking to the person on the phone.")
+    print("After a few minutes of Monika being on the phone.")
+    print("Monika look at you and signs that you need to leave")
+    print("You know something bad is going to happen.")
+    print("How will you leave or will you hide?")
+    print("1. Front door.")
+    print("2. Back door.")
+    print("3. Hide in the basement")
+    escape = console.check_answer("what do you do?: ", ["1", "2", "3", "front", "back", "hide"]).lower()
+    if escape == "1" or escape == "front":
+        print("")
+    elif escape == "2" or escape == "back":
+        print("")
+    elif escape == "3" or escape == "hide":
+        print("  ")
 
+def quick_escape():
+    print(" ")
 
 def play_again():
     print(" ")
@@ -198,6 +280,7 @@ def play_again():
 
 # starts the game and menu
 while start == True:
+    Sim_start()
     Menu.print_menu(Menu)
     menu = console.check_answer("What do you want to do?", ["1", "intro", "start", "2", "skip", "quit", "3", "help", "4"])
     print(" ")
