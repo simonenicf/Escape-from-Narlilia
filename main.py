@@ -1,11 +1,14 @@
 import sys
 import time
+import random
 from menu import Menu
 from game_engine import Console, Player
 
 console = Console()
 player = Player()
 start = True
+basement_suprise = ["demon", "open", "closed", "bear"]
+choice = " "
 name = " "
 start_sim = " "
 enter = " "
@@ -243,11 +246,96 @@ def shady_people():
     print("3. Hide in the basement")
     escape = console.check_answer("what do you do?: ", ["1", "2", "3", "front", "back", "hide"]).lower()
     if escape == "1" or escape == "front":
+        print("You quickly make your way towards the front door.")
         print("")
     elif escape == "2" or escape == "back":
         print("")
     elif escape == "3" or escape == "hide":
-        print("  ")
+        print("You quickly make your way to your basement door.")
+        print("You open you basement door and go down into your basement.")
+        print("You pick up a heavy piece of wood you found on the ground and try to block the door with it.")
+        print("You wait a while in the basement.")
+        basement()
+
+def basement():
+    choice = random.choice(basement_suprise)
+    if choice == "bear":
+        print("You feel like someone is breathing in your neck.")
+        print("You slowly turn around in the dark basement to check what it is.")
+        print("You put your hands forward to feel what it is.")
+        print("It feels really fluffy and fur like.")
+        print("Wait a second you think to yourself.")
+        print("It would have impossible that that bear you locked up here a few days weeks ago is still right.")
+        print("Will your are thinking about it the bear is getting ready to murder you")
+        print("*slash* And there you go.")
+        print("Killed by a bear.")
+        print("R.I.P. " + player.get_name(name) + ".")
+        print(67 * "-")
+        print(" ")
+        print("GAME OVER")
+        time.sleep(1)
+        print(" ")
+        print("ENDING BEAR")
+        print("schrödinger bear")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif choice == "demon":
+        print("You are alone down in the basement.")
+        print("You suddenly hear a voice coming from the dark corner of the room.")
+        print("Co...me.... wi....th.. u...s....")
+        print("You were pretty sure that there is nothing else down here..... RIGHT????")
+        print("You feel chill flowing down your spine.")
+        print("You know there is something down here. There has to be right......")
+        print("You starting to panic and don't know what to do.")
+        print("The panic is so overwhelming that you feel like that you don't want to be here anymore.")
+        print("You lose consciousness.")
+        print(67 * "-")
+        print(" ")
+        print("GAME OVER")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 666")
+        print("Demonic take over")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif choice == "open":
+        print("After hiding in the basement for a while you hear some people entering your house.")
+        print("Angery man: Hey " + player.get_name(name) + "we know your in here.")
+        print("You hear them going through your house.")
+        print("You hope the are unable to find you.")
+        print("You suddenly hear them kicking against the basement door")
+        print("You hope the door can hold it.")
+        print("Then you hear *bam* the door flies downwards right in your face.")
+        print("The door knocks you unconscious.")
+        print(67 * "-")
+        print(" ")
+        print("GAME OVER")
+        time.sleep(1)
+        print(" ")
+        print("ENDING DOOR")
+        print("Knock knock who is there?")
+        print("The door")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif choice == "closed":
+        print("After hiding in the basement for a while you hear some people entering your house.")
+        print("Angery man: Hey " + player.get_name(name) + "we know your in here.")
+        print("You hear them going through your house.")
+        print("You hope the are unable to find you.")
+        print("You suddenly hear them kicking against the basement door")
+        print("You hope the door can hold it.")
+        print("You hear this guy trying really hard to open up the door but the door won't budge.")
+        print("Then you hear someone yell.")
+        print("Angery man: Guys he is nowhere to be found lets move out.")
+        print("You hear everyone that is upstairs leave.")
+        print("You survived this stressfull ordeal.")
+        escaped_basement()
+
+def escaped_basement():
+    print("succes")
 
 def quick_escape():
     print(" ")
