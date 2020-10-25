@@ -19,7 +19,32 @@ def quit():
 
 # put the intro here
 def intro():
-    print("please put intro here")
+    print("You were invited by your friend to test his newest simulator.")
+    time.sleep(1)
+    print("He wanted to see how you would react on his invention.")
+    time.sleep(1)
+    print("Because he wanted to see how people would react on fleeing there own country.")
+    time.sleep(1)
+    print("And to discover how it is to trade a place you are familiar with for something new.")
+    time.sleep(1)
+    print("Far away from your friends and family.")
+    time.sleep(1)
+    print("So he created this simulator called escape simulator.")
+    time.sleep(1)
+    print("He told you the simulation will take place in a land called Narlilia.")
+    time.sleep(1)
+    print("The country is in constant war with the civilians.")
+    time.sleep(1)
+    print("The war is getting so out of hand that the civilians are starting to attack you for your believe.")
+    time.sleep(1)
+    print("You don't see a other way out anymore than to escape from the country.")
+    time.sleep(1)
+    print("The country you love and grow up in.")
+    time.sleep(1)
+    print("Will you manage to escape out of this country or fail horribly.")
+    time.sleep(1)
+    console.check_answer("Plz press enter to continue.")
+
     adventure()
 
 def help():
@@ -39,7 +64,7 @@ def adventure():
     print("@: Oh sorry. I didn't expect that you where here already.")
     time.sleep(1)
     player.set_name(console.check_answer("So what is our name user?"))
-    print("Oh hi " + player.get_name(name) + ". It's nice to meet you.")
+    print("@: Oh hi " + player.get_name(name) + ". It's nice to meet you.")
     time.sleep(1)
     print("@: I'm escape simulator.")
     time.sleep(1)
