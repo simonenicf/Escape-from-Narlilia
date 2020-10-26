@@ -395,9 +395,35 @@ def suspicious_building():
         time.sleep(1)
         console.check_answer("Plz press enter to continue.")
     elif choice == "human_traffic":
-        print("lets get out of here")
+        print("You see a man sitting behind a table.")
+        print("Man: Hello stranger, are you here for help to get out of the country?")
+        print("You find the man pretty suspicious but you feel like you have no other choose.")
+        print("You say to him that you indeed need to get out of the country.")
+        print("Man: Ah okay. I will help you get out of here.")
+        print("The man gives you a form.")
+        print("You read trough the form.")
+        print("In the form stands that you will sell them your property and give them a amount of money.")
+        print("You feel like this is wrong")
+        print("But it feels like you have no other option.")
+        print("So you sign the form and give it back to the man.")
+        print("The man smile's and gives you a piece of paper")
+        print("Man: Be on time.")
+        print("On the paper stands a location and time.")
+        escape_traffic()
     elif choice == "smuggler":
-        print("Back of truck")
+        print("You enter a huge warehouse.")
+        print("Man: Ah welcome welcome.")
+        print("You get greeted by a strange man.")
+        print("Man: So you are here to get out of the country yeah right.")
+        print("You tell him that you indeed need to get out of the country.")
+        print("Man: Ofcourse ofcourse.")
+        print("Man: I have a wonderfull way yeah.")
+        print("You ask him how he will get you out.")
+        print("Man: I will put you hidden in this trucks.")
+        print("The man points to the trucks in the warehouse.")
+        print("This feels like a stupid idea.")
+        print("But it feels like you don't have an other choose.")
+        escape_truck()
 
 def quick_escape():
     print(" ")
@@ -407,9 +433,14 @@ def quick_escape():
 def pablo_escape():
     print("Pablo")
 
+def escape_traffic():
+    print("Traffic")
+
 def monika_escape():
     print("Monika")
 
+def escape_truck():
+    print("truck")
 
 
 def play_again():
