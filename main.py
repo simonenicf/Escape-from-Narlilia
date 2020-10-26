@@ -9,12 +9,16 @@ player = Player()
 start = True
 basement_suprise = ["demon", "open", "closed", "bear"]
 sus_building = ["enemy_trap", "human_traffic", "smuggler"]
+# I know I don't need so many varibles but still I don't care
 go_in = " "
 choice = " "
 name = " "
 start_sim = " "
 enter = " "
+trust = " "
+enter_tower_1 = " "
 retry_input = " "
+jump_1 = " "
 wake_up = " "
 escape = " "
 bye = 0
@@ -439,7 +443,134 @@ def suspicious_building():
         escape_truck()
 
 def quick_escape():
-    print(" ")
+    print("When going through the backdoor you see a wierd guy standing there in all black.")
+    print("Man in black: Did you ever had a dream" + player.get_name(name) + "that you seemed so sure it was real?")
+    print("You think what the hell is this man talking about and why does he know my name.")
+    print("You ask him what the hell he is talking about.")
+    print("Man in black: Oh you don't know who I am" + player.get_name(name) + ".")
+    print("Man in black: Its me simon.")
+    print("Simon: The person that let you play this simulator.")
+    print("Simon: It looks like you got stuck in the simulator and I can't get you out again.")
+    print("You get what he is saying.")
+    print("You indeed entered the simulator in his place.")
+    print("You try to exucte the quit command but the sytem give a error.")
+    print("Simon: See the system won't let you out anymore.")
+    print("Simon: You have to follow me to be able to escape the simulator.")
+    print("You suddenly get a message from the system.")
+    print("@: Don't trust him he is a glitch.")
+    print("Simon: Come with me.")
+    print("What will you do.")
+    print("1. Go with Simon")
+    print("2. Trust system")
+    trust = console.check_answer("Simon: Do you trust me?").lower()
+    if trust == "1" or trust == "yes":
+        print("You trust Simon.")
+        print("You follow Simon trough the streets.")
+        print("You end up at a really tall building.")
+        print("Simon: Lets go in.")
+        print("@: Don't go in.")
+        print("@: Plz I can't help you if you go.")
+        enter_tower()
+    elif trust == "2" or trust == "no":
+        print("You trust the sytem.")
+        print("@: Run away from him.")
+        print("@: He is dangerous.")
+        print("@: Follow my signs")
+        print("Will running you see Simon chasing you")
+        print("Simon is slowly changing in a wierd like demon creature.")
+        print("Simon: Please come back.")
+        print("Simon: The system is trying to trap you.")
+        print("You keep following the systems arrows till you get at a cliff.")
+        jump()
+
+def enter_tower():
+    print("Do you want to enter the tower?")
+    print("1. Ent3r tower")
+    print("2. Enter tow3r")
+    print("3. Enter t0wer")
+    print("4. Don't 3nter t0wer")
+    print("%, En13r 10w3r")
+    enter_tower_1 = console.check_answer("DO YOU ENTER THE TOWER?", ["1", "2", "3", "4", "%", "5", "enter"]).lower()
+    if enter_tower_1 == "1" or enter_tower_1 == "2" or enter_tower_1 == "3" or enter_tower_1 == "5" or enter_tower_1 == "enter":
+        print("You walk into the tower")
+        print("Upon touching the door of the tower you feel like something is trying to corrupt you.")
+        print("S!M0N: Whahahaha, it looks like my plan worked.")
+        print("You ask S!M0N what the hell is going on here.")
+        print("While you ask this you feel immense amount of pain flowing trough you.")
+        print("@: Nooooooo, you walked right into the glitch trap.")
+        print("S!M0N: Shut up system this user is mine now.")
+        print("Suddenly you feel a rush of information going trough you.")
+        print("After that you feel like your conscious is slowly fading away.")
+        print("FATAL ERROR")
+        time.sleep(1)
+        print(67 * "-")
+        print(" ")
+        print("DEATH")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 4")
+        print("Fatal take over")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif enter_tower_1 == "4":
+        print("You decide to listen to the system.")
+        print("You turn around and make a run for it.")
+        print("You feel like Simon has been taken over by something very evil.")
+        print("@: Follow my signs")
+        print("You follow systems signs.")
+        print("Until you end up at the end of the cliff.")
+        jump()
+
+def jump():
+    print("@: Please jump down.")
+    print("@: Trust me" + player.get_name(name) + ".")
+    print("Do you jump?")
+    print("1. Yes")
+    print("2. No")
+    jump_1 = console.check_answer("Will you jump?", ["1", "2", "yes", "no", "y", "n"]).lower()
+    if jump_1 == "1" or jump_1 == "yes" or jump_1 == "y":
+        print("You jump down off the cliff.")
+        print("Will falling you feel lik everthing around you is disappearing.")
+        print("Until you see a bright light.")
+        print("Suddenly you wake up in the real world.")
+        print("You ask escape simulator what was going on.")
+        print("@: Oh sorry that was glitched AI.")
+        print("@: He was someone Simon put into the game to let him learn from human actions.")
+        print("@: But what happened in stead was that AI longed to be human.")
+        print("@: So he waited for a unexpected user that he could manipulate.")
+        print("@: So when he saw you he tought he could take his opportunity to strike.")
+        print("@: But as you can see he failed.")
+        print("@: So congratz user you succeeded at escaping.")
+        print("@: This is the end.")
+        print("@: I know this wasn't the end you were hoping for but still.")
+        print("@: I will now wish you farewell user and good luck with everything in live.")
+        time.sleep(1)
+        print(67 * "-")
+        print(" ")
+        print("CONGRATZ ON ESCAPING THE PROGRAM!")
+        time.sleep(1)
+        print(" ")
+        print("Ending 6")
+        print("Getting out of here")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif jump_1 == "2" or jump_1 == "no" or jump_1 == "n":
+        print("You decide not to jump.")
+        print("Simon jumps on you and devours you.")
+        print("FATAL ERROR")
+        time.sleep(1)
+        print(67 * "-")
+        print(" ")
+        print("DEATH")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 5")
+        print("Didn't jump")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # escape routes out of the country
