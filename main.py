@@ -8,6 +8,8 @@ console = Console()
 player = Player()
 start = True
 basement_suprise = ["demon", "open", "closed", "bear"]
+sus_building = ["enemy_trap", "human_traffic", "smuggler"]
+go_in = " "
 choice = " "
 name = " "
 start_sim = " "
@@ -88,8 +90,6 @@ def adventure():
     run()
 
 def run():
-    print(" ")
-    time.sleep(1)
     start_sim = console.check_answer("Will you start the sim?: ", ["1", "yes", "y", "2", "no", "n"]).lower()
     if start_sim == ("1") or start_sim == ("yes") or start_sim == ("y"):
         print("Nyaaa")
@@ -279,6 +279,8 @@ def shady_people():
         print("You wait a while in the basement.")
         basement()
 
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RNG route
 def basement():
     choice = random.choice(basement_suprise)
     if choice == "bear":
@@ -357,7 +359,45 @@ def basement():
         escaped_basement()
 
 def escaped_basement():
-    print("succes")
+    print("You slowly make your way to the basement door.")
+    print("You put your ear up to the door to be sure that everyone left.")
+    print("You don't hear anything.")
+    print("You slowly open the door and hope that there is no one left.")
+    print("When you look around you don't see a single person in the building left.")
+    print("You go through the back door and run a trough a couple of streets.")
+    print("You see there a sign above a build saying 'way out of the country'.")
+    print("It look really shady but you think to yourself what other choose do I have left.")
+    print("Do you go in or search for a other way out?")
+    print("1. Go in.")
+    print("2. Search for a other way.")
+    go_in = console.check_answer("What do you do?", ["1", "2", "go in", "search"]).lower()
+    if go_in == "1" or go_in == "go in":
+        print("You go into the suspicious building.")
+        suspicious_building()
+    elif go_in == "2" or go_in == "search":
+        print(" ")
+
+def suspicious_building():
+    choice = random.choice(sus_building)
+    if choice == "enemy_trap":
+        print("You just walk into the trap of the poeple that are looking for you.")
+        print("They take you hostage.")
+        print("They want to know where Monika is.")
+        print("Obviously you don't know where she is.")
+        print("Now your stuck here with the people that want you as hostage and then dead.")
+        print(67 * "-")
+        print(" ")
+        print("GAME OVER")
+        time.sleep(1)
+        print(" ")
+        print("ENDING TRAP")
+        print("Its a trap")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+    elif choice == "human_traffic":
+        print("lets get out of here")
+    elif choice == "smuggler":
+        print("Back of truck")
 
 def quick_escape():
     print(" ")
