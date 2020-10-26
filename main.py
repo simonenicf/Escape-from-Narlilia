@@ -375,7 +375,20 @@ def escaped_basement():
         print("You go into the suspicious building.")
         suspicious_building()
     elif go_in == "2" or go_in == "search":
-        print(" ")
+        print("You decide not to go into the building.")
+        print("You continue your run till you come across a familiar face.")
+        print("Nick: Howdy man.")
+        print("Its your friend Nick")
+        print("Nick is a master in getting people out of the country maybe he can help.")
+        print("So you ask Nick if he can get you out of this country because some bad people are looking for you.")
+        print("Nick: Yeah ofcourse, man.")
+        print("Nick: I can get you out right now if you want.")
+        print("Nick: You know its free because your my best pal.")
+        print("Nick hands you some stuff and then walks to his car.")
+        print("Nick: He come man lets go.")
+        print("You go into Nick's car.")
+        print("You think to yourself what do I have to lose.")
+        escape_nick()
 
 def suspicious_building():
     choice = random.choice(sus_building)
@@ -442,6 +455,8 @@ def monika_escape():
 def escape_truck():
     print("truck")
 
+def escape_nick():
+    print("Nick")
 
 def play_again():
     print(" ")
