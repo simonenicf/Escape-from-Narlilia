@@ -247,9 +247,31 @@ def shady_people():
     escape = console.check_answer("what do you do?: ", ["1", "2", "3", "front", "back", "hide"]).lower()
     if escape == "1" or escape == "front":
         print("You quickly make your way towards the front door.")
-        print("")
+        print("You look through the window see if its safe to run.")
+        print("On that moment some throws a smoke grenade on the street.")
+        print("This is my change to escape.")
+        print("You quickly run outside and run a few streets over.")
+        print("You see a man stand there with a van.")
+        print("He seem to recognize you")
+        print("Van man: Hey " + player.get_name(name) + ". How is it going?")
+        print("When you get closer to him you start to recognize him.")
+        print("Its a your good pall Pablo.")
+        print("You tell him what is going on.")
+        print("Pablo: Awhhhh thats bad man.")
+        print("Pablo: But I think I can help you.")
+        print("Pablo: I know a few friends that do this for business.")
+        print("Pablo: I can bring you in contact with them.")
+        pablo_escape()
     elif escape == "2" or escape == "back":
-        print("")
+        print("You go through the back door.")
+        print("You see some friends from Monika waiting there for you at a van.")
+        print("A guy walks up to you.")
+        print("A guy: Hey, I heard you needed help getting out of the country, right?")
+        print("You tell him that you indeed do and that you need to leave right now.")
+        print("The guy node's and walks up to the van.")
+        print("A guy: Here look everything we need to cross the borders all arranged by my boss.")
+        print("You look in the van and see fake passports and some other stuff.")
+        monika_escape()
     elif escape == "3" or escape == "hide":
         print("You quickly make your way to your basement door.")
         print("You open you basement door and go down into your basement.")
@@ -340,6 +362,16 @@ def escaped_basement():
 def quick_escape():
     print(" ")
 
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# escape routes out of the country
+def pablo_escape():
+    print("Pablo")
+
+def monika_escape():
+    print("Monika")
+
+
+
 def play_again():
     print(" ")
     print(67 * "-")
@@ -368,8 +400,7 @@ def play_again():
 
 # starts the game and menu
 while start == True:
-    Sim_start()
-    Menu.print_menu(Menu)
+    Menu.print_menu()
     menu = console.check_answer("What do you want to do?", ["1", "intro", "start", "2", "skip", "quit", "3", "help", "4"])
     print(" ")
     if menu == ("1") or menu == ("intro") or menu == ("start"):
