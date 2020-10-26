@@ -1,7 +1,8 @@
 import sys
 
 class Menu():
-    def print_menu(self):
+    @staticmethod
+    def print_menu():
         print (30 * "-" , "Text based adventure" , 30 * "-")
         print ("1. start adventure (intro)")
         print ("2. start adventure (no intro)")
