@@ -442,6 +442,8 @@ def suspicious_building():
         print("But it feels like you don't have an other choose.")
         escape_truck()
 
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# quick escape route
 def quick_escape():
     print("When going through the backdoor you see a wierd guy standing there in all black.")
     print("Man in black: Did you ever had a dream" + player.get_name(name) + "that you seemed so sure it was real?")
@@ -573,7 +575,7 @@ def jump():
         play_again()
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# escape routes out of the country
+# part 2 escape out of the country
 def pablo_escape():
     print("Pablo")
 
@@ -581,13 +583,61 @@ def escape_traffic():
     print("Traffic")
 
 def monika_escape():
-    print("Monika")
+    print("A guy: Get in the van so that we can leave.")
+    print("You do as you were told and enter the van.")
+    print("Will being in the van you're told to be silence during the trip.")
+    print("Then you hear the enigne of the van starting.")
+    print("So the trip started.")
+    print("You are there in the truck with a few other people.")
+    print("You are going on a long trip trough country's to try to get to a safe country.")
+    print("Its was a long trip.")
+    print("By sitting hours on end with almost no breaks and almost no food.")
+    print("The van made a couple of stops but we may not come out of the van")
+    print("Sometimes the people of the customs would look into our truck and check our pasports.")
+    print("After checking them the let us go.")
+    print("After a while we finnaly stopped and the doors openend.")
+    print("A guy: You may come out now.")
+    print("A guy: Please follow me.")
+    print("You follow the guy into a building that is tottally boarded of.")
+    print("A guy: We will stay here for the night.")
+    print("A guy: You guys may not go outside.")
+    print("After he sayed that he went outside to smoke.")
+    the_building()
+
+def the_building():
+    print("After the guy left you started to look around.")
+    print("You see that there are two other guys also sitting in this building with you.")
+    print("You try to start with them a conversation with them.")
+    print("They say something along the lines of I'm tired please go to bed.")
+    print("You don't have a good feeling about this place.")
+    print("But you feel way to exhausted to do anything right now.")
+    print("So you decide to sleep here tonight.")
+    print("The next morning you got woken up by the guy that brought you here.")
+    print("A guy: Lets go back to the van its going to be a long trip.")
+    print("So you guys decide to go back into that afwull van.")
+    print("You are again hours on end with no breaks in the van.")
+    print("Till the van stops.")
+    print("The doors opened up.")
+    print("A guy: You may come out now.")
+    print("You are in a luscious city.")
+    print("After exiting the van the guy say that he needs to do something so you guys need to wait here.")
+    print("You're super exhausted and don't feel like you want to travel anymore in that van.")
+    print("You see some people walking by and want to ask them where you are in your best english.")
+    print("They tell you that you're in the city Amsteria.")
+    print("Amsteria is the main capital of the country Neatria.")
+    shelter_Neatria()
 
 def escape_truck():
     print("truck")
 
 def escape_nick():
     print("Nick")
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+# part 3 New country
+
+def shelter_Neatria():
+    print("Neatria")
 
 def play_again():
     print(" ")
