@@ -9,6 +9,7 @@ player = Player()
 start = True
 basement_suprise = ["demon", "open", "closed", "bear"]
 sus_building = ["enemy_trap", "human_traffic", "smuggler"]
+boat_stuff = ["tip over", "fight", "safe"]
 # I know I don't need so many varibles but still I don't care
 go_in = " "
 choice = " "
@@ -580,7 +581,28 @@ def pablo_escape():
     print("Pablo")
 
 def escape_traffic():
-    print("Traffic")
+    print("You go to the specified location on the paper.")
+    print("When you arive there you a bunch of people getting loaded on a small boat.")
+    print("You walk up to the man and ask if you are at the right spot.")
+    print("The man say you're and that you need to get a board of the boat.")
+    print("You do what the tell you and get onto the boat.")
+    print("Once everyone was a board of the boat you guys took of.")
+    print("This boat will hopefully take you guys over the ocean out of the country.")
+    boat_trip()
+
+def boat_trip():
+    choice = random.choice(boat_stuff)
+    if choice == "tip over":
+        print("The trip is taking a while now.")
+        print("You guys are now drifting on the occean slowly trying to go to your destination.")
+        print("Everyone on the boat looks terrified and hope they can make it on shore.")
+        print("You even hear a baby cry on boat.")
+        print("You really hope al of you can make it safely on shore.")
+
+    elif choice == "fight":
+        print(" ")
+    elif choice == "safe":
+        print("")
 
 def monika_escape():
     print("A guy: Get in the van so that we can leave.")
