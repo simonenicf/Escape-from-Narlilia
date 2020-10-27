@@ -10,6 +10,7 @@ start = True
 basement_suprise = ["demon", "open", "closed", "bear"]
 sus_building = ["enemy_trap", "human_traffic", "smuggler"]
 boat_stuff = ["tip over", "fight", "safe"]
+truck_survive = ["no", "yes"]
 # I know I don't need so many varibles but still I don't care
 go_in = " "
 choice = " "
@@ -578,7 +579,34 @@ def jump():
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # part 2 escape out of the country
 def pablo_escape():
-    print("Pablo")
+    print("Pablo takes out his phone and starts a phone call.")
+    print("After a while Pablo comes back to you")
+    print("Pablo: The are coming this way.")
+    print("So you wait there with Pablo for his friends.")
+    print("Then Pablo's friends arive.")
+    print("Man 1: So who is the person that we need to help.")
+    print("Pablo: My friend is here.")
+    print("Then Pablo points at you.")
+    print("Man 1: Okay come with us.")
+    print("You start to follow the Man.")
+    print("You then get to a car.")
+    print("When you are at the car the man put a bag suddenly over your head.")
+    print("You want to scream but you suddenly get knocked out.")
+    print("After a while you wake up.")
+    print("You are stuck in a cage")
+    print("When you look around you you see more people that are stuck in cage's.")
+    print("You feel like you fall in a trap.")
+    time.sleep(1)
+    print(67 * "-")
+    print(" ")
+    print("SLAVE OR WORSE")
+    time.sleep(1)
+    print(" ")
+    print("ENDING 8")
+    print("Became a slave or something.")
+    time.sleep(1)
+    console.check_answer("Plz press enter to continue.")
+    play_again()
 
 def escape_traffic():
     print("You go to the specified location on the paper.")
@@ -588,21 +616,63 @@ def escape_traffic():
     print("You do what the tell you and get onto the boat.")
     print("Once everyone was a board of the boat you guys took of.")
     print("This boat will hopefully take you guys over the ocean out of the country.")
+    print("The trip is taking a while now.")
+    print("You guys are now drifting on the occean slowly trying to go to your destination.")
+    print("Everyone on the boat looks terrified and hope they can make it on shore.")
+    print("You even hear a baby cry on boat.")
+    print("You really hope al of you can make it safely on shore.")
     boat_trip()
 
 def boat_trip():
     choice = random.choice(boat_stuff)
     if choice == "tip over":
-        print("The trip is taking a while now.")
-        print("You guys are now drifting on the occean slowly trying to go to your destination.")
-        print("Everyone on the boat looks terrified and hope they can make it on shore.")
-        print("You even hear a baby cry on boat.")
-        print("You really hope al of you can make it safely on shore.")
-
-    elif choice == "fight":
+        print("After a while its starts to strom.")
+        print("The ocean is getting pretty wild and you feel the boat is going to tip over.")
+        print("And then it happens a huge wave hits the boat.")
+        print("Everybody starts to scream for there live.")
+        print("The boat tips over.")
+        print("After that you get pushed down by the waves.")
+        print("You try to swim up but its futile.")
+        print("YOU DIED")
+        time.sleep(1)
+        print(67 * "-")
         print(" ")
+        print("DEATH")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 6")
+        print("The drowned")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif choice == "fight":
+        print("There suddenly breaks out a fight on the boat.")
+        print("People are pissed at each other.")
+        print("Because of the fighting people are starting to fall of.")
+        print("And then suddenly you get a person shoved in your face.")
+        print("You loss your balance and fall of the boat.")
+        print("You start to drift in the ice cold water.")
+        print("After a while you lose your concussions")
+        print("YOU DIED")
+        time.sleep(1)
+        print(67 * "-")
+        print(" ")
+        print("DEATH")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 7")
+        print("Pushed in sea.")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
     elif choice == "safe":
-        print("")
+        print("After a while you start to see land.")
+        print("Everybody is happy but still really scared.")
+        print("Eventually you guys hit land.")
+        print("At land are some people that see you get at shore and want to help you.")
+        print("After that you guys get brought to a camp.")
+        print("At the camp you find out this is a refugee camp.")
+        refugee_camp()
 
 def monika_escape():
     print("A guy: Get in the van so that we can leave.")
@@ -650,16 +720,90 @@ def the_building():
     shelter_Neatria()
 
 def escape_truck():
-    print("truck")
+    print("You start to follow the instructions of the man and you went into the hidden compartment.")
+    print("The hidden compartment is not so big.")
+    print("But it feels like you have no other choose.")
+    print("So you wait in this compartment.")
+    print("Then start the truck and starts your journey.")
+    truck_trip()
+
+def truck_trip():
+    choice = random.choice(truck_survive)
+    if choice == "no":
+        print("The trip goes on for a while.")
+        print("After a while you feel like you're getting sleepy.")
+        time.sleep(1)
+        print(67 * "-")
+        print(" ")
+        print("DEATH")
+        time.sleep(1)
+        print(" ")
+        print("ENDING 9")
+        print("No oxygen")
+        time.sleep(1)
+        console.check_answer("Plz press enter to continue.")
+        play_again()
+    elif choice == "yes":
+        print("The trip continue's for a while.")
+        print("You just relax in the truck and wait till you arive at your destination.")
+        print("After a while the truck stop.")
+        print("The compartment door goes open.")
+        print("The truck driver stands there.")
+        print("Driver: We have arrived.")
+        print("You get slowly out of the compartment.")
+        print("While going out you see that the sun is burning in your eyes.")
+        print("You start to put your elbow in front of your face.")
+        print("Then when trying to get out this way you loose your balance.")
+        print("Driver: He calm there budy.")
+        print("The driver catches and helps you to regain your balance.")
+        print("You ask the driver where you are.")
+        print("Driver: We are in the wonderfull country of Jupinia.")
+        print("You think by yourself were that is.")
+        print("Driver: It lays pretty far away from Narlilia.")
+        print("Driver: So don't worry they won't get you here.")
+        print("You're pretty happy to hear those words from the driver.")
+        print("You ask where you can go for to register your self as refugee.")
+        print("Driver: Ah okay I will bring you in contact with my friends.")
+        jupinia_shelter()
 
 def escape_nick():
-    print("Nick")
+    print("Nick start to drive trough the country with no worries that his car would get hit.")
+    print("Will bombs are going of around us Nick is loudly singing with the song on the radio.")
+    print("This goes on for awhile.")
+    print("Till suddenly the car breaks down.")
+    print("Nick: Ah fuck.")
+    print("Nick: That was my favourite car.")
+    print("You ask Nick where you guys are.")
+    print("Nick: We are now in Kolit the neighboring country of Narlilia.")
+    print("You ask if Nick know someone that you can go to and if its safe here.")
+    print("Nick: I know a few friends that can help you.")
+    print("Nick start to call them.")
+    print("After Nick is done with the phone call he says that his friend will pick us up.")
+    print("And that they can get me a job in this country and a place to live.")
+    print("You wait there with Nick for a while.")
+    print("Then a car comes driving towards you guys.")
+    print("The car stops near Nicks broken down car.")
+    print("Men from car: Hey Nick how is it going.")
+    print("Nick: Not so well.")
+    print("Nick: My car broke down will I was helping my pal " + player.get_name(name) + " .")
+    print("Men from car: Yeah boss already told me that.")
+    print("Men from car: So get in and we will get them a nice temporary place and job.")
+    print("You get into the car of the men.")
+    shelter_kolit()
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------
 # part 3 New country
+def jupinia_shelter():
+    print("Jupinia")
 
 def shelter_Neatria():
     print("Neatria")
+
+def refugee_camp():
+    print("Camp")
+
+def shelter_kolit():
+    print(" ")
 
 def play_again():
     print(" ")
