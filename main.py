@@ -793,18 +793,82 @@ def escape_nick():
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------
 # part 3 New country
-def jupinia_shelter():
-    print("Jupinia")
+def shelter_kolit():
+    print("They ride the car to the main capital of Kolit called Meniria.")
+    print("Meniria is a rich city which is also seen by most as the city of freedom.")
+    print("The street of Meniria are mainly ruled by the mafia.")
+    print("The mafia is peacefully ruling this city.")
+    print("The mafia wants to give everyone freedom and a place to live if you want to work for it.")
+    print("This is what the guys in the car told you.")
+    print("And the guy they call boss is the leader of the mafia leading the city.")
+    print("Why the mafia took over was because Meniria was first know as the drug capital and the leader of the mafia hated that.")
+    print("He wants to see a world without drugs.")
+    print("And because the goverment didn't want to do anything against it so the mafia took over.")
+    print("The car just entered the city as they finished the story.")
+    print("While you look around in the city it looks so much different than your own place while the country's are not that far apart.")
+    print("The city looks way more advanced than your own city you lived in.")
+    print("After a while you guys arrive at a small house in the city.")
+    print("Men from car: This is where you while temporarily stay till you have shown us that you are a hard worker.")
+    print("Men from car: I will get the papper works ready for you so don't worry.")
+    print("Men from car: Try to relax now.")
+    print("Men from car: Because I think you had a pretty stressfull day.")
+    kolit_epilogue()
 
 def shelter_Neatria():
-    print("Neatria")
+    print("After founding out where you were you started to find someone that could help you guys.")
+    print("Then you saw there a guy that looked like a cop.")
+    print("You asked him if he know someone that could help us.")
+    print("He told us there was a place we could go to find temporarily safe gaurd.")
+    print("He also gave you guys a card in with which you could travel for one day trough the entire country.")
+    print("You thanked him and went on your way to place the cop person had mentioned.")
+    print("It took you a couple of hours to get there.")
+    print("When there you explained your situation to the lady at the counter.")
+    print("The lady checks and tells you that you can stay here for the night.")
+    print("But tommorow you need to go to a different asylum center.")
+    print("So you take you rest here tonight.")
+    print("The next day you are of to the asylum center she mentioned.")
+    neatria_epilogue()
 
 def refugee_camp():
-    print("Camp")
+    print("You find out that most people in this camp are stuck here because the will not be let through to other countries.")
+    print("And even some people in the camps were send back to there own country.")
+    print("There is no way to contact your friends or family.")
+    print("The conditions in this camp is really bad and sometimes big fights break out over almost nothing.")
+    print("Some people try to climb over the fence or try to find other ways out.")
+    print("And some of them wait here untill they can leave.")
+    print("This feels so horrible.")
+    print("You will try to make the best of it as you can at this place.") 
+    refugee_epilogue()
+def jupinia_shelter():
+    print("The truck driver calls his friends to help.")
+    print("After he is done with the call he says that you need to wait here and they will pick you up.")
+    print("So you do what he told you.")
+    print("You wait there for a while and see a police car driving to you.")
+    print("Cop: He you there.")
+    print("You look at the cop and ask if he means you.")
+    print("Cop: Yeah you I heard from my comrade that you needed help and want to settle in this beautiful country.")
+    print("You say you indeed are looking for shelter and possible want to temporally live here.")
+    print("Cop: Thats wonderfull comrade.")
+    print("Cop: Come with us and you will see how wonderfull this country is.")
+    print("You agree to go with the cop.")
+    print("The cop brings you to asylum center of country.")
+    print("And tells you everything will be fine.")
+    jupinia_epilogue()
 
-def shelter_kolit():
-    print(" ")
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# part 4 epilogue
+def kolit_epilogue():
+    print("epilogue kolit")
 
+def neatria_epilogue():
+    print("Neatria epilogue")
+
+def refugee_epilogue():
+    print("refugee epilogue")
+
+def jupinia_epilogue():
+    print("jupinia epilogue")
+    
 def play_again():
     print(" ")
     print(67 * "-")
