@@ -64,6 +64,14 @@ def help():
     print(" ")
     print(67 * "-")
     print(" ")
+    print("This game is a text based adventure where you choose your answers by typing in the answer and pressing enter.")
+    time.sleep(1)
+    print("All of the questions you can simply answer by typing the number before the anwser.")
+    time.sleep(1)
+    print("Sometimes there is a comformation text thats asks you to press enter to continue.")
+    time.sleep(1)
+    print("Quit command here: ")
+    print("good luck")
     console.check_answer("Plz press enter to continue.")
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -497,6 +505,10 @@ def basement():
         escaped_basement()
 
 def escaped_basement():
+    print(67 * "-")
+    print(" ")
+    console.check_answer("Plz press enter to continue.")
+    print(" ")
     print("You slowly make your way to the basement door.")
     time.sleep(1)
     print("You put your ear up to the door to be sure that everyone left.")
