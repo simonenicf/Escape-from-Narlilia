@@ -23,6 +23,8 @@ I technically needed to make a flow chart for it but I kind forgot to do that an
 
 Making this assignment maked me release that we have it pretty good here. 
 We don't need to worry about war, getting killed for believe or political reasons, having bad living conditions and alot more other stuff. 
+
 I also noticed during making this that its handy to have flow chart prepared so that you know better how you want the story to flow. 
 And I found out that I maybe don't need to write so much stuff. 
-I also needed to have start working on this earlier on this project so that I can ask people for feedback and put that in my code.
+
+I also needed to have start working on this earlier on this project so that I could have asked people to tested it and give feedback and put that in my code.
