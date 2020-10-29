@@ -12,3 +12,5 @@
 .ionide
 .gitignore
 __pychache__/*
+game_engine.cpython-38
+menu.cpython-38
