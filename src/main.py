@@ -453,7 +453,7 @@ def basement():
     elif choice == "open":
         print("After hiding in the basement for a while you hear some people entering your house.")
         time.sleep(1)
-        print("Angery man: Hey " + player.get_name(name) + "we know your in here.")
+        print("Angery man: Hey " + player.get_name(name) + " we know your in here.")
         time.sleep(1)
         print("You hear them going through your house.")
         time.sleep(1)
@@ -482,7 +482,7 @@ def basement():
     elif choice == "closed":
         print("After hiding in the basement for a while you hear some people entering your house.")
         time.sleep(1)
-        print("Angery man: Hey " + player.get_name(name) + "we know your in here.")
+        print("Angery man: Hey " + player.get_name(name) + " we know your in here.")
         time.sleep(1)
         print("You hear them going through your house.")
         time.sleep(1)
@@ -657,13 +657,13 @@ def suspicious_building():
 def quick_escape():
     print("When going through the backdoor you see a wierd guy standing there in all black.")
     time.sleep(1)
-    print("Man in black: Did you ever had a dream" + player.get_name(name) + "that you seemed so sure it was real?")
+    print("Man in black: Did you ever had a dream " + player.get_name(name) + " that you seemed so sure it was real?")
     time.sleep(1)
     print("You think what the hell is this man talking about and why does he know my name.")
     time.sleep(1)
     print("You ask him what the hell he is talking about.")
     time.sleep(1)
-    print("Man in black: Oh you don't know who I am" + player.get_name(name) + ".")
+    print("Man in black: Oh you don't know who I am " + player.get_name(name) + ".")
     time.sleep(1)
     print("Man in black: Its me simon.")
     time.sleep(1)
@@ -747,7 +747,7 @@ def enter_tower():
     print("%, En13r 10w3r")
     time.sleep(1)
     enter_tower_1 = console.check_answer("DO YOU ENTER THE TOWER?", ["1", "2", "3", "4", "%", "5", "enter"]).lower()
-    if enter_tower_1 == "1" or enter_tower_1 == "2" or enter_tower_1 == "3" or enter_tower_1 == "5" or enter_tower_1 == "enter":
+    if enter_tower_1 == "1" or enter_tower_1 == "2" or enter_tower_1 == "3" or enter_tower_1 == "5" or enter_tower_1 == "enter" or enter_tower_1 == "%":
         print(67 * "-")
         print(" ")
         print("You walk into the tower")
@@ -1181,7 +1181,7 @@ def truck_trip():
         time.sleep(1)
         print("Then when trying to get out this way you loose your balance.")
         time.sleep(1)
-        print("Driver: He calm there budy.")
+        print("Driver: He calm there buddy.")
         time.sleep(1)
         print("The driver catches and helps you to regain your balance.")
         time.sleep(1)
